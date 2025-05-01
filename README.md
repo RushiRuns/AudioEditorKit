@@ -63,6 +63,28 @@ AudioEditorKit.presentEditor(audio: rep, parent: self) { edited, newURL in
 
 Additionally, you can specify export options by using the `exportAudioSettings` property of `AudioFileRepresentable`.
 
+For SwiftUI developers, use one of the view modifiers showing below:
+
+```swift
+ContentView()
+    .audioEditorSheet(
+        isPresented: $isPresented,
+        audio: rep
+    ) { edited, newURL in 
+        if edited {
+            // Handle the edited audio file at newURL
+        } 
+    }
+    .audioEditorFullScreenCover(
+        isPresented: $isPresented,
+        audio: rep
+    ) { edited, newURL in 
+        if edited {
+            // Handle the edited audio file at newURL
+        } 
+    }
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
