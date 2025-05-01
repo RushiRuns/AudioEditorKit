@@ -240,12 +240,18 @@ public final class AudioClipController: UIViewController {
 
         trimButton.setAttributedTitle(NSAttributedString(
             string: String(localized: "Trim", bundle: .module),
-            attributes: [.font: UIFont.systemFont(ofSize: 15.0, weight: .semibold)]
+            attributes: [
+                .font: UIFont.systemFont(ofSize: 15.0, weight: .semibold),
+                .foregroundColor: UIColor.label,
+            ]
         ), for: .normal)
 
         deleteButton.setAttributedTitle(NSAttributedString(
             string: String(localized: "Delete", bundle: .module),
-            attributes: [.font: UIFont.systemFont(ofSize: 15.0, weight: .semibold)]
+            attributes: [
+                .font: UIFont.systemFont(ofSize: 15.0, weight: .semibold),
+                .foregroundColor: UIColor.label,
+            ]
         ), for: .normal)
 
         currentTimeLabel.font = .monospacedDigitSystemFont(ofSize: isPad ? 38.0 : 46.0, weight: .semibold)
