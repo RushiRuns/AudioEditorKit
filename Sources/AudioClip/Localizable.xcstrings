@@ -1,0 +1,38 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Another %@ is required to continue editing. Available capacity is %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Another %1$@ is required to continue editing. Available capacity is %2$@."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要额外的 %1$@ 的储存空间才能继续编辑。当前可用：%2$@。"
+          }
+        }
+      }
+    },
+    "Specified range from %lf to %lf is invalid." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Specified range from %1$lf to %2$lf is invalid."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所指定的范围（%1$lf 至 %2$lf）无效。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
