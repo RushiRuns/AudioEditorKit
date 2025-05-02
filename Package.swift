@@ -30,6 +30,7 @@ let package = Package(
             "AudioClipPlayer",
             "ProgressHUD",
         ], resources: [
+            .process("Resources/Localizable.xcstrings"),
             .process("Resources/AudioClipController.storyboard"),
             .process("Resources/AudioClipController_iPad.storyboard"),
         ]),
@@ -42,6 +43,8 @@ let package = Package(
         ]),
         .target(name: "AudioClip", dependencies: [
             "WaveformAnalyzer",
+        ], resources: [
+            .process("Resources/Localizable.xcstrings"),
         ]),
         .target(name: "AudioClipPlayer"),
         .target(name: "WaveformAnalyzer", dependencies: [
