@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-extension View {
+public extension View {
     @available(iOS 16.0, macCatalyst 16.0, visionOS 1.0, *)
     @available(macOS, unavailable)
     @available(tvOS, unavailable)
     @available(watchOS, unavailable)
-    nonisolated public func audioEditorSheet(
+    nonisolated func audioEditorSheet(
         isPresented: Binding<Bool>,
         audio: AudioFileRepresentable,
         onAudioChanged: @escaping AudioClipController.AudioEditorCompletionHandler,
@@ -22,12 +22,12 @@ extension View {
             AudioEditor(audio: audio, completion: onAudioChanged)
         }
     }
-    
+
     @available(iOS 16.0, macCatalyst 16.0, visionOS 1.0, *)
     @available(macOS, unavailable)
     @available(tvOS, unavailable)
     @available(watchOS, unavailable)
-    nonisolated public func audioEditorFullScreenCover(
+    nonisolated func audioEditorFullScreenCover(
         isPresented: Binding<Bool>,
         audio: AudioFileRepresentable,
         onAudioChanged: @escaping AudioClipController.AudioEditorCompletionHandler,
@@ -44,8 +44,8 @@ extension View {
 private struct AudioEditor: UIViewControllerRepresentable {
     var audio: AudioFileRepresentable
     var completion: AudioClipController.AudioEditorCompletionHandler
-    
-    func makeUIViewController(context: Context) -> UINavigationController {
+
+    func makeUIViewController(context _: Context) -> UINavigationController {
         let isPad = UIDevice.current.userInterfaceIdiom == .pad
         let storyboard = UIStoryboard(
             name: isPad ? "AudioClipController_iPad" : "AudioClipController",
@@ -55,11 +55,11 @@ private struct AudioEditor: UIViewControllerRepresentable {
         navController.modalPresentationStyle = .formSheet
         navController.modalTransitionStyle = .coverVertical
         navController.preferredContentSize = CGSize(width: 666, height: 666)
-        
+
         return navController
     }
-    
-    func updateUIViewController(_ controller: UINavigationController, context: Context) {
+
+    func updateUIViewController(_ controller: UINavigationController, context _: Context) {
         let controller = controller.viewControllers.first as! AudioClipController
         controller.audio = audio
         controller.completionHandler = completion
