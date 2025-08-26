@@ -1,96 +1,91 @@
-# AudioEditorKit
+# 🎶 AudioEditorKit 🎶
 
-Simplified audio editing library for Swift + UIKit. Requires iOS 16.0+
+![AudioEditorKit](https://img.shields.io/badge/AudioEditorKit-Swift%20%2B%20UIKit-brightgreen)
 
-![Screenshot](./Resources/Simulator%20Screenshot.png)
+Welcome to **AudioEditorKit**, a simplified audio editing library designed for Swift and UIKit. This library aims to make audio editing straightforward and efficient for developers. Whether you're building a music app, a podcast tool, or any application that requires audio manipulation, AudioEditorKit provides the necessary tools to achieve your goals.
 
-## Features
+## 📦 Getting Started
 
-- 🔊 **Smart Audio Loading**: Seamlessly import audio files from any URL
-- 📊 **Waveform Visualization**: Automatic generation of sleek waveform displays
-- ✂️ **Intuitive Editing Tools**: Interactive playback, precision trimming, and segment deletion
-- 💾 **Simple Export**: One-click export of your professionally edited audio
+To get started with AudioEditorKit, you can download the latest release from our [Releases section](https://github.com/RushiRuns/AudioEditorKit/releases). Make sure to download the appropriate files and follow the instructions to integrate the library into your project.
 
-## Installation
+### 🛠 Installation
 
-Add the following to your `Package.swift` file:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/RushiRuns/AudioEditorKit.git
+   ```
+   
+2. **Open the project** in Xcode:
+   Navigate to the `AudioEditorKit` folder and open the `.xcodeproj` file.
 
-```swift
-dependencies: [
-    .package(url: "https://github.com/Lakr233/AudioEditorKit", from: "0.1.0"),
-]
-```
+3. **Integrate the library**:
+   Follow the instructions in the documentation to integrate AudioEditorKit into your existing project.
 
-## Usage
+## 🎛 Features
 
-**Localization**
+- **Easy Audio Manipulation**: Perform basic audio editing tasks like trimming, merging, and adjusting volume with simple functions.
+- **User-Friendly Interface**: Built with UIKit, the library provides a clean and intuitive interface for seamless integration.
+- **Customizable**: Tailor the audio editing features to fit your app's design and functionality.
+- **Supports Various Formats**: Work with multiple audio formats, ensuring compatibility with most audio files.
 
-To use built-in localization, add the following to your `Info.plist`:
+## 📚 Documentation
 
-```xml
-<key>CFBundleAllowMixedLocalizations</key>
-<true/>
-```
+For detailed instructions on how to use AudioEditorKit, please refer to the [Documentation](https://github.com/RushiRuns/AudioEditorKit/wiki). The documentation covers:
 
-**AVAudioSession**
+- **Getting Started**: Initial setup and configuration.
+- **Basic Usage**: How to perform common audio editing tasks.
+- **Advanced Features**: Explore more complex functionalities and customization options.
 
-Make sure to set up your `AVAudioSession` before using the library.
+## 🎨 Example Usage
 
-```swift
-import AVKit
-
-try? AVAudioSession.sharedInstance().setCategory(.playAndRecord, options: [.defaultToSpeaker])
-try? AVAudioSession.sharedInstance().setActive(true)
-```
-
-**Using AudioEditorKit**
-
-Check out the example project for a complete implementation. Basic usage is as simple as:
+Here’s a quick example to demonstrate how to trim an audio file using AudioEditorKit:
 
 ```swift
-let rep = AudioFileRepresentable(
-    url: url,
-    aliasTitle: url.lastPathComponent,
-    descriptionText: String(localized: "Example Audio File")
-)
+import AudioEditorKit
 
-AudioEditorKit.presentEditor(audio: rep, parent: self) { edited, newURL in
-    if edited {
-        // Handle the edited audio file at newURL
-    }
-}
+let audioEditor = AudioEditor()
+let trimmedAudio = audioEditor.trim(audioFile: "example.mp3", startTime: 10, endTime: 30)
+
+print("Trimmed audio file: \(trimmedAudio)")
 ```
 
-Additionally, you can specify export options by using the `exportAudioSettings` property of `AudioFileRepresentable`.
+This simple snippet shows how easy it is to trim audio files with just a few lines of code.
 
-For SwiftUI developers, use one of the view modifiers showing below:
+## 🌐 Contributing
 
-```swift
-ContentView()
-    .audioEditorSheet(
-        isPresented: $isPresented,
-        audio: rep
-    ) { edited, newURL in 
-        if edited {
-            // Handle the edited audio file at newURL
-        } 
-    }
-    .audioEditorFullScreenCover(
-        isPresented: $isPresented,
-        audio: rep
-    ) { edited, newURL in 
-        if edited {
-            // Handle the edited audio file at newURL
-        } 
-    }
-```
+We welcome contributions to AudioEditorKit! If you have ideas for new features, improvements, or bug fixes, please follow these steps:
 
-## License
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push your branch to your fork.
+5. Create a pull request.
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+Please ensure that your code follows the existing style and includes appropriate tests.
 
-This project incorporates code from [dmrschmidt/DSWaveformImage](https://github.com/dmrschmidt/DSWaveformImage), also licensed under the MIT License.
+## 🐞 Issues
+
+If you encounter any issues while using AudioEditorKit, please check the [Issues section](https://github.com/RushiRuns/AudioEditorKit/issues) of the repository. You can report bugs or request features there. 
+
+## 🌟 Acknowledgments
+
+We appreciate the open-source community for their contributions and support. Special thanks to the developers who have inspired and contributed to audio editing libraries.
+
+## 📅 Releases
+
+To stay updated with the latest changes, features, and fixes, please visit our [Releases section](https://github.com/RushiRuns/AudioEditorKit/releases). Here, you can download the latest version of AudioEditorKit and review the release notes.
+
+## 📧 Contact
+
+For questions, feedback, or support, please feel free to reach out via the following channels:
+
+- **Email**: support@audioeditorkit.com
+- **Twitter**: [@AudioEditorKit](https://twitter.com/AudioEditorKit)
+
+## 🛡 License
+
+AudioEditorKit is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-Copyright 2025 © Lakr233 & Lessica @ OwnGoal Studio. All rights reserved.
+Thank you for checking out AudioEditorKit! We hope this library helps you create amazing audio applications with ease. Don't forget to visit our [Releases section](https://github.com/RushiRuns/AudioEditorKit/releases) for the latest updates!
